@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.10.10)  8 FEB 2025 11:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.10.10)  14 MAR 2025 12:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1566,7 +1566,7 @@ Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@roff=\dimen354
 ))
 LaTeX Font Info:    Trying to load font information for OT1+lmss on input line 
-30.
+33.
  (C:\Users\jkohl\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmss.fd
 File: ot1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -1577,24 +1577,24 @@ LaTeX Warning: Unused global option(s):
 (Cheatsheet_Mathe_2.aux)
 \openout1 = `Cheatsheet_Mathe_2.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for U/mathx/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for U/mathx/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1630,8 +1630,8 @@ LaTeX Font Info:    ... okay on input line 30.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Command `\dddot' is already robust on input line 30.
-LaTeX Info: Command `\ddddot' is already robust on input line 30.
+LaTeX Info: Command `\dddot' is already robust on input line 33.
+LaTeX Info: Command `\ddddot' is already robust on input line 33.
 
 Package siunitx Warning: Detected the "physics" package:
 (siunitx)                omitting definition of \qty.
@@ -1650,7 +1650,7 @@ File: translations-basic-dictionary-german.trsl (german translation file `trans
 lations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `german'. on input line 30.
+or `german'. on input line 33.
 
 (C:\Users\jkohl\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
@@ -1681,7 +1681,7 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into 
 your preamble.
- on input line 30.
+ on input line 33.
 
 (C:\Users\jkohl\AppData\Local\Programs\MiKTeX\tex/latex/ragged2e\ragged2e.sty
 Package: ragged2e 2023/06/22 v3.6 ragged2e Package
@@ -1700,7 +1700,7 @@ Package: ragged2e 2023/06/22 v3.6 ragged2e Package
 \RaggedRightParindent=\skip100
 \JustifyingParindent=\skip101
 )
-Package hyperref Info: Link coloring ON on input line 30.
+Package hyperref Info: Link coloring ON on input line 33.
 
 (Cheatsheet_Mathe_2.out) (Cheatsheet_Mathe_2.out)
 \@outlinefile=\write4
@@ -1750,8 +1750,30 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 16.
 (C:\Users\jkohl\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ))
-(../Snippeds/Vektoren/Kreuzprdukt.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 1--30
+(../Snippeds/Integrale/Substitution.tex
+Underfull \hbox (badness 10000) in paragraph at lines 2--3
+
+ []
+
+
+LaTeX Font Warning: Command \large invalid in math mode on input line 8.
+
+
+LaTeX Font Warning: Command \large invalid in math mode on input line 8.
+
+
+LaTeX Font Warning: Command \large invalid in math mode on input line 8.
+
+
+LaTeX Font Warning: Command \large invalid in math mode on input line 8.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--10
+
+ []
+
+) (../Snippeds/Vektoren/Kreuzprdukt.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 1--33
 
  []
 
@@ -1769,13 +1791,13 @@ Package rerunfilecheck Info: File `Cheatsheet_Mathe_2.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 45086 strings out of 473899
- 1064018 string characters out of 5726499
- 1659129 words of memory out of 5000000
- 67208 multiletter control sequences out of 15000+600000
- 587142 words of font info for 67 fonts, out of 8000000 for 9000
+ 45099 strings out of 473899
+ 1064447 string characters out of 5726499
+ 1665202 words of memory out of 5000000
+ 67214 multiletter control sequences out of 15000+600000
+ 589874 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 89i,12n,96p,841b,1201s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 89i,12n,96p,841b,1207s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\jkohl\AppData\Local\MiKTeX\fonts/pk/ljfour/public/mathabx/dpi480\m
 athx10.pk> <C:\Users\jkohl\AppData\Local\MiKTeX\fonts/pk/ljfour/public/mathabx/
 dpi600\matha8.pk> <C:\Users\jkohl\AppData\Local\MiKTeX\fonts/pk/ljfour/public/m
@@ -1785,10 +1807,11 @@ e1/public/lm/lmmi6.pfb><C:/Users/jkohl/AppData/Local/Programs/MiKTeX/fonts/type
 /public/lm/lmr6.pfb><C:/Users/jkohl/AppData/Local/Programs/MiKTeX/fonts/type1/p
 ublic/lm/lmr8.pfb><C:/Users/jkohl/AppData/Local/Programs/MiKTeX/fonts/type1/pub
 lic/lm/lmss10.pfb><C:/Users/jkohl/AppData/Local/Programs/MiKTeX/fonts/type1/pub
-lic/lm/lmssbx10.pfb>
-Output written on Cheatsheet_Mathe_2.pdf (1 page, 120916 bytes).
+lic/lm/lmss8.pfb><C:/Users/jkohl/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/lm/lmssbx10.pfb>
+Output written on Cheatsheet_Mathe_2.pdf (1 page, 138255 bytes).
 PDF statistics:
- 69 PDF objects out of 1000 (max. 8388607)
- 2 named destinations out of 1000 (max. 500000)
+ 79 PDF objects out of 1000 (max. 8388607)
+ 3 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
