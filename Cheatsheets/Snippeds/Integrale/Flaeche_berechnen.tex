@@ -1,4 +1,6 @@
 \subsubsection{Integralfläche berechnen (analytisch)}
+Sobald sich Funktionen schneiden, muss das Integral aufgeteilt werden.
+Wenn die Fläche über/unter der X-Achse berechnet werden soll, kann diese als Funktion $g(x) = 0$ angesehen werden.
 
 \begin{flalign}
     A = \int_{a}^{b}{|f(x) - g(x)|} \,dx \label{eq:Calculate_area}
@@ -27,6 +29,13 @@
 \end{tikzpicture}
 \end{center}
 
+\textbf{Anleitung}
+\begin{enumerate}
+    \item Funktionen gleich setzen, um Nullstellen zu berechnen
+    \item Integrale bilden
+    \item Berechnen
+\end{enumerate}
+
 \subsubsection{Trapezformel (Numerisch)}
 \begin{flalign}
     &S_{1} = y_{1} + y_{n} \qquad S_{2} = y_{1} + y_{2} + \dots + y_{n-1}&\notag\\
@@ -34,5 +43,5 @@
 \end{flalign}
 \begin{enumerate}
     \item Stützstellen bestimmen und ausrechnen
-    \item Mit Taschenrechner alle Stützstellen mittels Formel \ref{eq:Trapezformel} berechnen 
+    \item Mit Taschenrechner alle Stützstellen mittels Formel \ref{eq:Trapezformel} zusammenrechnen 
 \end{enumerate}
