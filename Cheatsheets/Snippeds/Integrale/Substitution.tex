@@ -1,10 +1,21 @@
 \subsubsection{Substitution}
 \textbf{Normale Substitution}\\
-\begin{align}
-    \int_{a}^{b} f(x) dx \qquad \large|& \qquad u(x) = f(x)\notag\\
-    |& \qquad u'(x) = f'(x)\notag\\
-    |& \qquad du = u'(x)\cdot dx\notag\\
-    \int_{u(a)}^{u(b)} u(x) \frac{1}{u'(x)} du \qquad \large|& \qquad dx = \frac{1}{u'(x)} \cdot du
-\end{align}\\
-\textbf{Umgekehrte Substitution}\\
+\begin{flalign}
+    \int_{a}^{b} f(g(x)) dx \quad | \quad u(x) = g(x) \quad &| \quad u'(x) = g'(x) \quad | \quad du = u'(x)\cdot dx \notag&\\
+    \int_{u(a)}^{u(b)} u(x) \frac{1}{u'(x)} \,du \quad &| \quad dx = \frac{1}{u'(x)} \,du&\label{eq:Substitution}\\\notag
+\end{flalign}
+Wenn nach einer Substitution noch ein x in der Gleichung vorhanden ist, muss dieses in ein u umgewandelt werden.
 
+\begin{flalign}
+    \int \frac{e^{2x}}{1+e^{2}} \,dx \quad | \quad u = 1 + e^{x} \quad &| \quad u' = e^{x} \quad | \quad du = e^{x} \,dx \Leftrightarrow du = \frac{1}{e^{x}}&\notag\\
+    \int \frac{e^{2x}}{u} \cdot \frac{1}{e^{x}} \,du = \int \frac{e^{x}}{u} \,du \quad &| \quad u = 1 + e^{x} \Leftrightarrow e^{x} = u - 1&\notag\\
+    \int \frac{u - 1}{u} \,du = \int \frac{u}{u} - \frac{1}{u} \,du &= \int 1 - \frac{1}{u} \,du = \underline{\underline{u - \ln|u| + c}} &\notag
+\end{flalign}\\
+
+\textbf{Umgekehrte Substitution (Example)}\\
+
+\begin{flalign}
+    \int_{0}^{1} \sqrt{1 - x^2}\, dx \quad &| \quad x = \sin{u} \notag \quad | \quad x' = \cos{u} \notag&\\
+    \int_{0}^{\frac{\pi}{2}} \sqrt{1 - \sin^2{u}} \cdot \cos{u}\,du \quad &| \quad dx = \cos{u}\, du \Leftrightarrow   du = \frac{1}{\cos{u}}\, dx \notag&\\
+    \int_{0}^{\frac{\pi}{2}} \cos^2{u}\, du \quad =& \quad \left[\frac{u}{2} +  \frac{\sin{2u}}{4}\right]_{0}^{\pi/2} = \frac{\pi}{4} + 0 = \frac{\pi}{4}&\notag
+\end{flalign}
