@@ -1,0 +1,12 @@
+\begin{tabular}{|c|c|c|}
+\hline
+A1 & \tikzmarknode{B1}{B1} & C1 \\
+\hline
+A2 & B2 & \tikzmarknode{C2}{C2} \\
+\hline
+\end{tabular}
+
+\begin{tikzpicture}[overlay, remember picture]
+\draw[->, red, thick] (B1) to [out=0, in=180] (C2);
+\draw[->, blue, thick] (C2) to [bend right] (B1);
+\end{tikzpicture}

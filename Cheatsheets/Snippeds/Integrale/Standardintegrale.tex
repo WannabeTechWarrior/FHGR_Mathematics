@@ -5,17 +5,22 @@
 
 \begin{flalign}
     &\text{Standard}&\notag\\
-    &\int a^{a} \,dx = \frac{a^{x}}{\ln{x}}&\\
+    &\int a^{x} \,dx = \frac{a^{x}}{\ln{x}} + c \qquad \int{e^{x}} \,dx = e^x&\\ 
+    &\int{x^{n}} \,dx = \frac{1}{n+1} \cdot x^{n+1} + c \quad n \ne -1&\\
+    &\int{x^{-1}} \,dx = \int{\frac{1}{x}} \,dx = \ln|x| + c&\\
     &\text{Sinus}&\notag\\
     &\int{\sin{x} \cdot \cos{x}}\, dx = \frac{1}{2} \cdot \sin^2{x} + c&\\
+    &\int{\sin^2{x}} \,dx = \frac{1}{2} (x - \sin{x} \cdot \cos{x}) + c&\\
     &\int{\sinh{x}} \,dx = \cosh{x} + c&\\
     &\text{Cosinus}&\notag\\
+    &\int{\frac{1}{\cos^2{x}} \,dx} = \int{1 + \tan^2{x}} = \tan{x} + c&\\
     &\int{\cosh{x}}\,dx = \sinh{x} + c&\\
     &\int{\cot{x}}\, dx = \frac{1}{\tan{x}} + c = \ln|\sin{x}| + c = \frac{\cos{x}}{\sin{x}} + c&\\
     &\int{\coth{x}}\, dx = \frac{\cosh{x}}{\sinh{x}} + c&\\
     &\text{Tangents}&\notag\\
     &\int{\tan{x}}\, dx = \frac{1}{\cot{x}} + c = -\ln|\cos{x}| + c = \frac{\sin{x}}{\cos{x}} + c&\\
-    &\int{\tanh{x}}\, dx = \frac{\sinh{x}}{\cosh{x}} + c&
+    &\int{\tanh{x}}\, dx = \frac{\sinh{x}}{\cosh{x}} + c&\\
+    &\int{\frac{1}{1 + x^2}} \,dx = \arctan{x}&
 \end{flalign}
 
 \textcolor{red}{Add these derrivatives somewhere usefull}

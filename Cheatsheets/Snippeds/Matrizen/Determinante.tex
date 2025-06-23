@@ -1,0 +1,102 @@
+\subsubsection{Determinante}
+\textbf{2x2 Matrizen}\\
+\begin{minipage}{0.29\linewidth}
+    \vspace{3mm}
+    \begin{flalign}
+        & \det(
+            \begin{matrix}
+                $\tikzmarknode{a}{a}$ & $\tikzmarknode{b}{b}$\\
+                $\tikzmarknode{c}{c}$ & $\tikzmarknode{d}{d}$\\
+            \end{matrix}
+        ) = &\notag
+    \end{flalign}
+    \begin{tikzpicture}[overlay, remember picture]
+        \draw[-, red, thick] (a) to (d);
+        \draw[-, blue, thick] (c) to (b);
+    \end{tikzpicture}
+\end{minipage}
+\hfill
+\begin{minipage}{0.39\linewidth}
+    \begin{flalign}
+        &\textcolor{red}{(a \cdot d)} - \textcolor{blue}{(c \cdot b)}&
+    \end{flalign}
+\end{minipage}\\
+\textbf{3x3 Matrizen}\\
+\begin{minipage}{0.39\linewidth}
+    \vspace{3mm}
+    \begin{flalign}
+        & \det(
+            \begin{matrix}
+                $\tikzmarknode{a}{a}$ & $\tikzmarknode{b}{b}$ & $\tikzmarknode{c}{c}$\\
+                $\tikzmarknode{d}{d}$ & $\tikzmarknode{e}{e}$ & $\tikzmarknode{f}{f}$\\
+                $\tikzmarknode{g}{g}$ & $\tikzmarknode{h}{h}$ & $\tikzmarknode{i}{i}$\\
+            \end{matrix}
+        ) = &\notag
+    \end{flalign}
+    \begin{tikzpicture}[overlay, remember picture]
+        \draw[-, red, thick] (a) to (e) to (i);
+        \draw[-, red, thick] (b) to (f) to (g);
+        \draw[-, red, thick] (c) to (d) to (h);
+        \draw[-, blue, thick] (g) to (e) to (c);
+        \draw[-, blue, thick] (h) to (f) to (a);
+        \draw[-, blue, thick] (i) to (d) to (b);
+    \end{tikzpicture}
+\end{minipage}
+\hfill
+\begin{minipage}{0.59\linewidth}
+    \begin{flalign}
+        &\textcolor{red}{(a \cdot e \cdot i) + (b \cdot f \cdot g) + (c \cdot d \cdot h)}&\notag\\
+        &\textcolor{blue}{- (g \cdot e \cdot c) - (h \cdot f \cdot a) - (i \cdot d \cdot b)}&
+    \end{flalign}
+\end{minipage}
+
+% Define signed matrix colors
+\definecolor{pos-sign}{RGB}{255,0,0}  % Red for '+'
+\definecolor{neg-sign}{RGB}{0,0,255}  % Blue for '-'
+
+% Custom command for colored sign entries
+\newcommand{\sign}[1]{\if#1+{\color{pos-sign}+}\else{\color{neg-sign}-}\fi}
+
+\textbf{4x4 Matrizen / nxn Matrix}\\
+\begin{minipage}{0.3\linewidth}
+    \vspace{3mm}
+    \begin{flalign}
+    &\mathrel{\vcenter{\hbox{
+        \begin{tikzpicture}[baseline=(A.base), remember picture]
+        % Original coefficient matrix
+        \matrix [matrix of nodes, nodes={inner sep=2mm}, anchor=base, left delimiter=(, right delimiter=),
+                ampersand replacement=\&] (A) {
+            \tikzmarknode{a}{a} \& \tikzmarknode{b}{b} \& \tikzmarknode{c}{c} \& \tikzmarknode{d}{d}\\
+            \tikzmarknode{e}{e} \& \tikzmarknode{f}{f} \& \tikzmarknode{g}{g} \& \tikzmarknode{h}{h}\\
+            \tikzmarknode{i}{i} \& \tikzmarknode{j}{j} \& \tikzmarknode{k}{k} \& \tikzmarknode{l}{l}\\
+            \tikzmarknode{m}{m} \& \tikzmarknode{n}{n} \& \tikzmarknode{o}{o} \& \tikzmarknode{p}{p}\\
+        };
+        % Overlay sign matrix (transparent)
+        \matrix [matrix of nodes, opacity=0.7,
+                nodes={inner sep=2mm}, overlay, ampersand replacement=\&,
+                shift={(0.2,0.15)}] at (A) {
+            \sign{+} \& \sign{-} \& \sign{+} \& \sign{-}\\ 
+            \sign{-} \& \sign{+} \& \sign{-} \& \sign{+}\\ 
+            \sign{+} \& \sign{-} \& \sign{+} \& \sign{-}\\ 
+            \sign{-} \& \sign{+} \& \sign{-} \& \sign{+}\\ 
+        };
+    \end{tikzpicture}}}} = A&\notag
+    \end{flalign}
+\end{minipage}
+\hfill
+\begin{minipage}{0.5\linewidth}
+    \begin{enumerate}
+        \item Spalte/Reihe mit den meisten Nullen auswählen
+        \item Die Vorfaktoren der Spalten/Reihenwerte mit der Vorzeichenmatrix (\textcolor{red}{+}, \textcolor{blue}{-}) bestimmen
+    \end{enumerate}
+\end{minipage}
+
+\begin{minipage}{0.45\linewidth}
+    test
+\end{minipage}
+\hfill
+\begin{minipage}{0.48\linewidth}
+    \begin{enumerate}[start=3]
+        \item test
+    \end{enumerate}
+\end{minipage}
