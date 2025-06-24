@@ -3,3 +3,75 @@
 \subsubsection{Surjektiv}
 
 \subsubsection{Bijektiv}
+
+% Injective Function
+\begin{tikzpicture}[
+    set/.style={ellipse, draw, minimum width=3cm, minimum height=4cm},
+    element/.style={circle, fill=black, inner sep=1pt}]
+
+% Domain (left set)
+\node[set] (A) at (0,0) {};
+\node[element,label=left:$a$] (a) at (-0.5,1) {};
+\node[element,label=left:$b$] (b) at (-0.5,0) {};
+\node[element,label=left:$c$] (c) at (-0.5,-1) {};
+
+% Codomain (right set)
+\node[set] (B) at (4,0) {};
+\node[element,label=right:$1$] (1) at (4.5,1.5) {};
+\node[element,label=right:$2$] (2) at (4.5,0.5) {};
+\node[element,label=right:$3$] (3) at (4.5,-0.5) {};
+\node[element,label=right:$4$] (4) at (4.5,-1.5) {};
+
+% Arrow mappings
+\draw[->,blue] (a) to[bend left] (1);
+\draw[->,red] (b) to (2);
+\draw[->,green!70!black] (c) to[bend right] (3);
+\end{tikzpicture}
+
+% Surjective Function
+\begin{tikzpicture}[
+    set/.style={ellipse, draw, minimum width=3cm, minimum height=4cm},
+    element/.style={circle, fill=black, inner sep=1pt}]
+
+% Domain (left set)
+\node[set] (A) at (0,0) {};
+\node[element,label=left:$a$] (a1) at (-0.5,1) {};
+\node[element,label=left:$b$] (b1) at (-0.5,0) {};
+\node[element,label=left:$c$] (c1) at (-0.5,-1) {};
+\node[element,label=left:$d$] (d1) at (-0.5,-2) {};
+
+% Codomain (right set)
+\node[set] (B) at (4,0) {};
+\node[element,label=right:$1$] (1) at (4.5,1) {};
+\node[element,label=right:$2$] (2) at (4.5,0) {};
+\node[element,label=right:$3$] (3) at (4.5,-1) {};
+
+% Arrow mappings
+\draw[->,blue] (a1) to (1);
+\draw[->,red] (b1) to (2);
+\draw[->,green!70!black] (c1) to (3);
+\draw[->] (d1) to[bend right] (3);
+\end{tikzpicture}
+
+% Bijective Function
+\begin{tikzpicture}[
+    set/.style={ellipse, draw, minimum width=3cm, minimum height=4cm},
+    element/.style={circle, fill=black, inner sep=1pt}]
+
+% Domain (left set)
+\node[set] (A) at (0,0) {};
+\node[element,label=left:$a$] (a2) at (-0.5,1) {};
+\node[element,label=left:$b$] (b2) at (-0.5,0) {};
+\node[element,label=left:$c$] (c2) at (-0.5,-1) {};
+
+% Codomain (right set)
+\node[set] (B) at (4,0) {};
+\node[element,label=right:$1$] (1) at (4.5,1) {};
+\node[element,label=right:$2$] (2) at (4.5,0) {};
+\node[element,label=right:$3$] (3) at (4.5,-1) {};
+
+% Arrow mappings
+\draw[->,blue] (a2) to[bend left=10] (1);
+\draw[->,red] (b2) to[bend left=0] (2);
+\draw[->,green!70!black] (c2) to[bend right=10] (3);
+\end{tikzpicture}
