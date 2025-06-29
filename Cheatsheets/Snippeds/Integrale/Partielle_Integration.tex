@@ -23,4 +23,42 @@
     \draw[->] (D3) to (I4);
     \draw[->] (D4) to (I5);
     \draw[->] (D5) to (I5);
-\end{tikzpicture}
+\end{tikzpicture}\\
+
+\textbf{Beispiel}\\
+\begin{flalign*}
+    &\sqrt{2}\int_{0}^{2\pi}{\cos^2{x} + x \cdot \sin{x}} \,dx&
+\end{flalign*}
+\begin{minipage}{0.5\linewidth}
+\begin{tabular}{r|cc}
+    V & D & I\\
+    \hline
+    + & $\cos{x}$ & $\cos{x}$\\
+    - & $-\sin{x}$ & $\sin{x}$\\
+\end{tabular}\\
+
+\begin{flalign*}
+    &= \cos{x} \cdot \sin{x} + \int_{0}^{2\pi}{\sin^2{x}} \,dx&\\
+    &F = \cos{x} \cdot \sin{x} + \int_{0}^{2\pi}{1} \,dx&\\ &- \int_{0}^{2\pi}{\cos^2{x}} \,dx&\\
+    &= \frac{1}{2}(\cos{x} \cdot \sin{x} + x)&
+\end{flalign*}
+\end{minipage}
+\hfill
+\begin{minipage}{0.5\linewidth}
+\begin{tabular}{r|cc}
+    V & D & I\\
+    \hline
+    + & $x$ & $\sin{x}$\\
+    - & $1$ & $-\cos{x}$\\
+    + & $0$ & $-\sin{x}$
+\end{tabular}\\
+
+\begin{flalign*}
+    &= x \cdot -\cos{x} + \sin{x}&\\ &- \int_{0}^{2\pi}{0 \cdot \sin{x}} \,dx&\\
+    &= x \cdot -\cos{x} + \sin{x}&\\
+\end{flalign*}
+\end{minipage}\\
+
+\begin{flalign*}
+    &\Rightarrow \sqrt{2} \left[\frac{1}{2} (\cos{x} \cdot \sin{x} + x + \sin{x} - x \cdot \cos{x})\right]_{0}^{2\pi}&\\
+\end{flalign*}

@@ -5,13 +5,17 @@
     \item Gradientenfeld: Beschreibt, wie und wohin sich der Wert des Skalarfelds ändert
 \end{itemize}
 
-\subsubsection{Levelmengen}
-\begin{flalign}
-    &f^{-1}(\{L\}) = \{p \in A | f(p) = L\}&
-\end{flalign}
-
 \subsubsection{Vektorfelder}
 \begin{flalign}
     &\text{Einheitsvektorfeld: }\vec{v}(p) = \hat{v}(p)&\\
     &\text{Homogenes Vektorfeld: } \vec{v}(p) = \vec{w}&
 \end{flalign}
+
+\begin{flalign}
+    \vec{v} = \underbrace{\nabla \phi}_{\text{Gradientenfeld (quellenfrei)}} + \underbrace{\nabla \times \vec{A}}_{\text{Rotationsfeld (wirbelfrei)}}
+\end{flalign}
+\begin{itemize}
+    \item $\phi$: Skalarpotential (quellenfreier Anteil)
+    \item $\vec{A}$: Vektorpotential (wirbelfreier Anteil)
+    \item Zerlegung nach dem Helmholtz-Theorem
+\end{itemize}

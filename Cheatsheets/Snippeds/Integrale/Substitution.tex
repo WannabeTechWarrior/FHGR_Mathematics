@@ -14,8 +14,45 @@ Wenn nach einer Substitution noch ein x in der Gleichung vorhanden ist, muss die
 
 \textbf{Umgekehrte Substitution (Example)}\\
 
-\begin{flalign}
-    \int_{0}^{1} \sqrt{1 - x^2}\, dx \quad &| \quad x = \sin{u} \notag \quad | \quad x' = \cos{u} \notag&\\
-    \int_{0}^{\frac{\pi}{2}} \sqrt{1 - \sin^2{u}} \cdot \cos{u}\,du \quad &| \quad dx = \cos{u}\, du \Leftrightarrow   du = \frac{1}{\cos{u}}\, dx \notag&\\
-    \int_{0}^{\frac{\pi}{2}} \cos^2{u}\, du \quad =& \quad \left[\frac{u}{2} +  \frac{\sin{2u}}{4}\right]_{0}^{\pi/2} = \frac{\pi}{4} + 0 = \frac{\pi}{4}&\notag
-\end{flalign}
+\begin{minipage}{0.5\linewidth}
+    \begin{flalign*}
+        &\int_{0}^{a}{\sqrt{x^2 + 2}} \,dx = \int_{0}^{a}{\sqrt{2 (1 + \frac{x^2}{2})}} \,dx&\\
+        &\int_{0}^{a}{\sqrt{2} \sqrt{(1 + \frac{x^2}{2})}} \,dx&
+    \end{flalign*}
+\end{minipage}
+\hfill
+\begin{minipage}{0.4\linewidth}
+    \begin{flalign*}
+        &&\\
+        &\text{Substitution:}&\\
+        &x = \sqrt{2} u &\\
+        &\frac{dx}{du} = \sqrt{2} \Rightarrow dx = \sqrt{2}du&
+    \end{flalign*}
+\end{minipage}
+\begin{flalign*}
+    &\int_{0}^{\frac{a}{\sqrt{2}}}{\sqrt{2} \sqrt{(1 + \frac{(\sqrt{2}u)^2}{2})}} \,\sqrt{2}\,du = \int_{0}^{\frac{a}{\sqrt{2}}}{2 \sqrt{(1 + \frac{2u^2}{2})}} \,du&\\
+    & = 2 \cdot \int_{0}^{\frac{a}{\sqrt{2}}}{\sqrt{(1 + u^2)}} \,du&\\
+\end{flalign*}
+Partielle Integration\\
+\begin{minipage}{0.3\linewidth}
+    \begin{tabular}{r|cc}
+    V & D & I\\
+    \hline
+    + & $\sqrt{1 + u^2}$ & $1$\\
+    - & $\frac{x}{\sqrt{1 + u^2}}$ & $x$\\
+\end{tabular}\\
+\end{minipage}
+\hfill
+\begin{minipage}{0.6\linewidth}
+    \begin{flalign*}
+        &\Rightarrow 2\left(\text{''}\left[u \sqrt{1 + u^2}\right]_{0}^{\frac{a}{\sqrt{2}}}\text{''} - \int_{0}^{\frac{a}{\sqrt{2}}}{\frac{u^2}{\sqrt{1 + u^2}} \,du}\right)&\\
+        & = 2\left(\text{''''} - \int_{0}^{\frac{a}{\sqrt{2}}}{\frac{(1 + u^2) - 1}{\sqrt{1 + u^2}} \,du}\right)&\\
+    \end{flalign*}
+\end{minipage}
+\begin{flalign*}
+    & = 2\left(\text{''''} - \int_{0}^{\frac{a}{\sqrt{2}}}{\frac{1 + u^2}{\sqrt{1 + u^2}} \,du}  - \int_{0}^{\frac{a}{\sqrt{2}}}{\frac{1}{\sqrt{1 + u^2}} \,du}\right)&\\
+    &= 2\left(\left[u \sqrt{1 + u^2}\right]_{0}^{\frac{a}{\sqrt{2}}} - \int_{0}^{\frac{a}{\sqrt{2}}}{\sqrt{1 + u^2} \,du}  - \int_{0}^{\frac{a}{\sqrt{2}}}{\frac{1}{\sqrt{1 + u^2}} \,du}\right)&\\
+    &\Rightarrow 2F = 2\left(\left[u \sqrt{1 + u^2}\right]_{0}^{\frac{a}{\sqrt{2}}} - \int_{0}^{\frac{a}{\sqrt{2}}}{\frac{1}{\sqrt{1 + u^2}} \,du}\right)&\\
+    & = \left[u \sqrt{1 + u^2}\right]_{0}^{\frac{a}{\sqrt{2}}} - \int_{0}^{\frac{a}{\sqrt{2}}}{\frac{1}{\sqrt{1 + u^2}} \,du} = \left[u \sqrt{1 + u^2} - \arcsin{u}\right]_{0}^{\frac{a}{\sqrt{2}}}&\\
+    & = \frac{a}{\sqrt{2}} \sqrt{1 + (\frac{a}{\sqrt{2}})^2} - \arcsin{\frac{a}{\sqrt{2}}} - 0 = \frac{a}{\sqrt{2}} \sqrt{1 + \frac{1}{2}a^2} - \arcsin{\frac{a}{\sqrt{2}}}&\\
+\end{flalign*}

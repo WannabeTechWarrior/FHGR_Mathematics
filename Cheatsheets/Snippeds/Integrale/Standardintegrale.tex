@@ -1,32 +1,32 @@
 % https://en.wikipedia.org/wiki/List_of_integrals_of_trigonometric_functions#Integral_over_a_full_circle
 \subsubsection{Standardintegrale}
-
-\newcommand{\command}{\operatorname{new command output}}
-
-\begin{flalign}
-    &\text{Standard}&\notag\\
-    &\int a^{x} \,dx = \frac{a^{x}}{\ln{x}} + c \qquad \int{e^{x}} \,dx = e^x&\\ 
-    &\int{x^{n}} \,dx = \frac{1}{n+1} \cdot x^{n+1} + c \quad n \ne -1&\\
-    &\int{x^{-1}} \,dx = \int{\frac{1}{x}} \,dx = \ln|x| + c&\\
-    &\text{Sinus}&\notag\\
-    &\int{\sin{x} \cdot \cos{x}}\, dx = \frac{1}{2} \cdot \sin^2{x} + c&\\
-    &\int{\sin^2{x}} \,dx = \frac{1}{2} (x - \sin{x} \cdot \cos{x}) + c&\\
-    &\int{\sinh{x}} \,dx = \cosh{x} + c&\\
-    &\text{Cosinus}&\notag\\
-    &\int{\frac{1}{\cos^2{x}} \,dx} = \int{1 + \tan^2{x}} = \tan{x} + c&\\
-    &\int{\cosh{x}}\,dx = \sinh{x} + c&\\
-    &\int{\cot{x}}\, dx = \frac{1}{\tan{x}} + c = \ln|\sin{x}| + c = \frac{\cos{x}}{\sin{x}} + c&\\
-    &\int{\coth{x}}\, dx = \frac{\cosh{x}}{\sinh{x}} + c&\\
-    &\text{Tangents}&\notag\\
-    &\int{\tan{x}}\, dx = \frac{1}{\cot{x}} + c = -\ln|\cos{x}| + c = \frac{\sin{x}}{\cos{x}} + c&\\
-    &\int{\tanh{x}}\, dx = \frac{\sinh{x}}{\cosh{x}} + c&\\
-    &\int{\frac{1}{1 + x^2}} \,dx = \arctan{x}&
-\end{flalign}
-
-\textcolor{red}{Add these derrivatives somewhere usefull}
-\begin{flalign}
-    &\frac{d}{d{x}} \tan{x}\, = 1 + \tan^2{x}&\\
-    &\frac{d}{d{x}} \cot{x} = -1 -\cot^2{x}&
-\end{flalign}
-
+\begin{multicols}{2}
+    \begin{flalign}
+        &\textbf{Standartintegrale}&\notag\\
+        &\int m \,dx = m \cdot x + q&\\
+        &\int a^{x} \,dx = \frac{a^{x}}{\ln{x}} + c&\\
+        &\int{e^{x}} \,dx = e^x&\\ 
+        &\int{x^{p}} \,dx = \frac{1}{p+1} \cdot x^{p+1} + c \quad n \ne -1&\\
+        &\int{x^{-1}} \,dx = \int{\frac{1}{x}} \,dx = \ln|x| + c&\\
+        &\int_{x_0}^{x_E}{x^{-1}} \,dx = \int{\frac{1}{x}} \,dx = \ln{\frac{x_E}{x_0}}&
+    \end{flalign}
+    \begin{flalign}
+        &\textbf{Sinus}&\notag\\
+        &\int{\sin{x} \cdot \cos{x}}\, dx = \frac{1}{2} \cdot \sin^2{x} + c&\\
+        &\int{\sin^2{x}} \,dx = \frac{1}{2} (x - \sin{x} \cdot \cos{x}) + c&\\
+        &\int{\sinh{x}} \,dx = \cosh{x} + c&\\
+        &\textbf{Cosinus}&\notag\\
+        &\int{\frac{1}{\cos^2{x}} \,dx} = \int{1 + \tan^2{x}}&\notag\\
+        & = \tan{x} + c&\\
+        &\int{\cosh{x}}\,dx = \sinh{x} + c&\\
+        &\int{\cot{x}}\, dx = \frac{1}{\tan{x}} + c&\notag\\
+        &= \ln|\sin{x}| + c = \frac{\cos{x}}{\sin{x}} + c&\\
+        &\int{\coth{x}}\, dx = \frac{\cosh{x}}{\sinh{x}} + c&\\
+        &\textbf{Tangents}&\notag\\
+        &\int{\tan{x}}\, dx = \frac{1}{\cot{x}} + c&\notag\\
+        & = -\ln|\cos{x}| + c = \frac{\sin{x}}{\cos{x}} + c&\\
+        &\int{\tanh{x}}\, dx = \frac{\sinh{x}}{\cosh{x}} + c&\\
+        &\int{\frac{1}{1 + x^2}} \,dx = \arctan{x}&
+    \end{flalign}
+\end{multicols}
 

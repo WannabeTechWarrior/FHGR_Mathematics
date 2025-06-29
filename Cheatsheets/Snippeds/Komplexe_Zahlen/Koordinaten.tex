@@ -1,15 +1,19 @@
 
 
-\subsubsection{Koordinaten}
-\textbf{Kartesische Koordinaten} \\
-Ein System, das Punkte durch $(x, y)$ beschreibt \\
-\textbf{Polarkoordinaten} \\
-Punkte werden durch den Abstand $r$ und den Winkel $\varphi$ dargestellt: $(r, \varphi)$ \\
-\textbf{Polarkoordinaten - Komplexe Representation} \\
-$\operatorname{cis}{\varphi} = \cos{\varphi} \cdot i \cdot \sin{\varphi}$\\
-Komplexe Zahlen: $z = r \cdot \operatorname{cis}{\varphi}$ \\
-\textbf{Exponential Koordinaten} \\
-Verwendung der Euler'schen Formel: $z = re^{i\varphi}$\\
+\subsubsection{Koordinaten Arten}
+\begin{flalign}
+    &\textbf{Kartesische Koordinaten}& \notag \\
+    &z = x + iy &\\[1ex]
+    &\textbf{Polarkoordinaten} & \notag \\
+    &\text{Umrechnung kartesisch} \to \text{polar:} & \notag \\
+    &r = \sqrt{x^2 + y^2} & \notag \\
+    &\varphi = \arctan\left(\frac{y}{x}\right) \quad (x \neq 0) & \notag \\[1ex]
+    &\textbf{Komplexe Polarform} & \notag \\
+    &\operatorname{cis} \varphi = \cos \varphi + i \sin \varphi & \notag \\
+    &z = r \operatorname{cis} \varphi = r(\cos \varphi + i \sin \varphi) & \label{eq:polarform} \\[1ex]
+    &\textbf{Euler-Form} & \notag \\
+    &z = re^{i\varphi} \quad \text{(äquivalent zur Polarform)} & \label{eq:euler}
+\end{flalign}
 
 \begin{flalign}
     &x = r \cdot \cos{\phi} \quad|\quad y = r \cdot \sin{\phi}&\\

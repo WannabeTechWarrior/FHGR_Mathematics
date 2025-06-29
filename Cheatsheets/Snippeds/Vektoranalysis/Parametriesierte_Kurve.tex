@@ -1,88 +1,43 @@
 \subsubsection{Parameteriesierte Kurve}
 \vspace{3mm}
 \begin{minipage}{0.4\linewidth}
-    \begin{flalign}
-        &s: \left[\tau_{0}, \tau_{E}\right] \Rightarrow \mathbb{R}^n&\notag
-    \end{flalign}    
+    \textbf{Anleitung}
+    \begin{enumerate}
+        \item Funktion zeichnen
+        \item $\tau$ einsetzen und Wert für jeweilige Achse bestimmen
+        \item Grenzen bestimmen
+    \end{enumerate}
 \end{minipage}
 \hfill
 \begin{minipage}{0.5\linewidth}
+    \textbf{Formeln}\\
     \begin{flalign}
-        &\tau \mapsto \vec{s}(\tau) := \left[\begin{matrix}
-            s_1(\tau)\\
-            s_2(\tau)\\
+        &\gamma: \left[\tau_{0}, \tau_{E}\right] \Rightarrow \mathbb{R}^n&\notag\\
+        &\tau \mapsto \vec{\gamma}(\tau) := \left[\begin{matrix}
+            \gamma_1(\tau)\\
+            \gamma_2(\tau)\\
             \vdots\\
-            s_n(\tau)\\
+            \gamma_n(\tau)\\
         \end{matrix}\right]&
     \end{flalign}
 \end{minipage}
-\begin{itemize}
-    \item Geschwindigkeitsvektor: $\vec{v}(\tau) := \dot{s}(\tau)$
-    \item Bahngeschwindigkeit: $\vec{v}(\tau) := \left|\vec{v}(\tau)\right|$
-    \item Bahnvektor für $\vec{v}(\tau) \ne 0: \hat{e}(\tau) := \hat{v}(\tau)$
-    \item Beschleunigungsvektor: $\vec{a}(\tau) := \dot{v}(\tau)$
-    \item Bahnbeschleunigung: $a_B(\tau) := \langle a(\tau), \hat{e}(\tau)⟩$
-    \item Bahn: $B := \vec{s}(\left[\tau_0, \tau_E\right])$
-    \item Ortsvektor zeigt von Ursprung auf Punkt der Bahn
-    \end{itemize}
 
-\subsubsection{Standardkurven}
-\begin{minipage}{0.45\linewidth}
-    \begin{flalign}
-        &\textbf{Kreis mit Mittelpunkt M}&\notag\\
-        &s(\tau) = M + \left[\begin{matrix}
-            R \cdot \cos{\tau}\\
-            R \cdot \sin{\tau}
-        \end{matrix}\right]&\\
-        &\textbf{Zylinder}&\notag\\
-        &P(\varphi;z) = \left[\begin{matrix}
-            R \cdot \cos{\varphi}\\
-            R \cdot \sin{\varphi}\\
-            z\\
-        \end{matrix}\right]&\\
-        &\varphi \in \left[ 0, 2\pi \right[ ;z \in \left[0, H\right]&\notag\\
-        &\textbf{Kugel}&\notag\\
-            &P(\theta;\varphi) = \left[\begin{matrix}
-            R \cdot \sin{\theta} \cdot \cos{\varphi}\\
-            R \cdot \sin{\theta} \cdot \sin{\varphi}\\
-            R \cdot \cos{\theta}\\
-        \end{matrix}\right]&\\
-        &\theta \in \left[ 0, \pi \right[ ;\varphi \in \left[0, 2\pi\right[&\notag
-    \end{flalign}
-\end{minipage}
-\hfill
 \begin{minipage}{0.5\linewidth}
-    \begin{flalign}
-        &\textbf{Kegel}&\notag\\
-        &P(\varphi;r) = \left[\begin{matrix}
-            r \cdot \cos{\varphi}\\
-            r \cdot \sin{\varphi}\\
-            \frac{H}{R} \cdot r\\
-        \end{matrix}\right]&\\
-        &\varphi \in \left[ 0, 2\pi \right[ ;r \in \left[0, R\right]&\notag\\
-        &\textbf{Turnus}&\notag\\
-            &P(\theta;\varphi) = \left[\begin{matrix}
-            (R + r \cdot \sin{\theta}) \cdot \cos{\varphi}\\
-            (R + r \cdot \sin{\theta}) \cdot \sin{\varphi}\\
-            r \cdot \cos{\theta}\\
-        \end{matrix}\right]&\\
-        &\theta , \varphi \in \left[0, 2\pi\right[&\notag
-    \end{flalign}
+    \begin{itemize}
+        \item Geschwindigkeitsvektor:\\ $\vec{v}(\tau) := \dot{\vec{\gamma}}(\tau)$
+        \item Bahngeschwindigkeit:\\ $\vec{v}(\tau) := \left|\vec{v}(\tau)\right|$
+        \item Bahnvektor für $\vec{v}(\tau) \ne 0:\\ \hat{e}(\tau) := \hat{v}(\tau)$
+        \item Beschleunigungsvektor:\\ $\vec{a}(\tau) := \dot{v}(\tau)$
+    \end{itemize}
 \end{minipage}
-
-R = Radius | r = Variable
-
-\subsubsection{Bogenlänge}
-\begin{flalign}
-    &\Delta s := \int_{\tau_0}^{\tau_E}{v(\tau)} \,d\tau&
-\end{flalign}
-
-\subsubsection{Linienintegral}
-\begin{flalign}
-    &I := \int_{\tau_0}^{\tau_E}{\langle \vec{w}, \vec{v} \rangle} \,d\tau = \int_{s_0}^{s_E}{\langle \vec{w}, \hat{e} \rangle} \,ds&
-\end{flalign}
-\begin{itemize}
-    \item Vektorfeld $\vec{w}$
-    \item Geschwindigkeitsvektor Parameteriesierte Kurve: $\vec{v}$
-    \item Sei $\langle \vec{w}, \hat{e} \rangle =: C \equiv$ konst dann gilt: $I = C \cdot \Delta s$
-\end{itemize}
+\begin{minipage}{0.5\linewidth}
+    \begin{itemize}
+        \item Bahnbeschleunigung:\\ $a_B(\tau) := \langle a(\tau), \hat{e}(\tau)⟩$
+        \item Bahn:\\ $B := \vec{\gamma}(\left[\tau_0, \tau_E\right])$
+        \item Ortsvektor zeigt von Ursprung auf Punkt der Bahn
+        \item $x^2 \Rightarrow \vec{\gamma} = \left(\begin{matrix}
+            t\\
+            t^2
+        \end{matrix}\right)$
+    \end{itemize}
+\end{minipage}
